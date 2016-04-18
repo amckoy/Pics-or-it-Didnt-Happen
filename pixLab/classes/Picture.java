@@ -194,7 +194,7 @@ public class Picture extends SimplePicture
         for (int i = 171 ; i < mirrorPoint ; i++) {
             for (int j = 239 ; j < 294 ; j++) {
                 topPixel = pixels[i][j];
-                bottomPixel = pixels[mirrorPoint - row + mirrorPoint][col];
+                bottomPixel = pixels[mirrorPoint - i + mirrorPoint][j];
                 bottomPixel.setColor(topPixel.getColor());
             }
         }
